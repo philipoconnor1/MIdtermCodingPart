@@ -7,12 +7,12 @@ public class Rectangle extends Shape implements Comparable {
 	private int iLength;
 	private int iWidth;
 	
-	public Rectangle(int l, int w) throws Exception {
+	public Rectangle(int l, int w) throws IllegalArgumentException {
 		if(l > 0 && w > 0) { 
 			setiLength(l);
 			setiWidth(w);
 		} else {
-			throw new Exception("Invalid Input"); 
+			throw new IllegalArgumentException("Invalid Input"); 
 		}
 	}
 	

@@ -6,12 +6,12 @@ public class Cuboid extends Rectangle {
 	
 	private int iDepth;
 	
-	public Cuboid(int length, int width, int depth) throws Exception { 
+	public Cuboid(int length, int width, int depth) throws IllegalArgumentException { 
 		super(length, width);
 		if(depth > 0) {
 			setiDepth(depth);
 		} else {
-			throw new Exception("Invalid Input");
+			throw new IllegalArgumentException("Invalid Input");
 		}
 	}
 
@@ -39,12 +39,13 @@ public class Cuboid extends Rectangle {
 	}
 	
 	public int compareTo(Object o) {
-		return 0; 
+		Cuboid cub = (Cuboid) o;
+		return 0;
 	}
 
 }
 
-class SortByArea implements Comparator<Cuboid> {
+class SortbyArea implements Comparator<Cuboid> {
 	public int compare(Cuboid c1, Cuboid c2) {
 		return (int) (c1.area() - c2.area());
 	}	
