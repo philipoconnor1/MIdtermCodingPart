@@ -15,7 +15,7 @@ import pkgShape.Rectangle;
 public class RectangleTest {
 
 	@Test(expected = Exception.class)
-	public void constructortest() throws Exception {
+	public void constructortest() throws Exception {  
 		Rectangle rec = new Rectangle(0, -5);
 	}
 	

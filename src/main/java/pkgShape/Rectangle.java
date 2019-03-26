@@ -12,7 +12,7 @@ public class Rectangle extends Shape implements Comparable {
 			setiLength(l);
 			setiWidth(w);
 		} else {
-			throw new Exception("Invalid Input");
+			throw new Exception("Invalid Input"); 
 		}
 	}
 	

@@ -10,14 +10,12 @@ import org.junit.Test;
 
 import pkgShape.Cuboid;
 
-import pkgShape.Rectangle;
-
-public class CuboidTests {
+public class CuboidTest {
 
 	@Test(expected = Exception.class)
 	public void constructortest() throws Exception {
 		Cuboid cub = new Cuboid(1,3,-6);
-	}
+	} 
 	
 	@Test
 	public void constructortest1() throws Exception {

@@ -39,7 +39,7 @@ public class Cuboid extends Rectangle {
 	}
 	
 	public int compareTo(Object o) {
-		return 0;
+		return 0; 
 	}
 
 }
