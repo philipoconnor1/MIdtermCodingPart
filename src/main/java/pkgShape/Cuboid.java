@@ -42,7 +42,6 @@ public class Cuboid extends Rectangle {
 		Cuboid cub = (Cuboid) o;
 		return 0;
 	}
-
 }
 
 class SortbyArea implements Comparator<Cuboid> {

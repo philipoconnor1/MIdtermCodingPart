@@ -8,6 +8,7 @@ public class Rectangle extends Shape implements Comparable {
 	private int iWidth;
 	
 	public Rectangle(int l, int w) throws IllegalArgumentException {
+		super();
 		if(l > 0 && w > 0) { 
 			setiLength(l);
 			setiWidth(w);
