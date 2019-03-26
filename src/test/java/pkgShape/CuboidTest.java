@@ -115,15 +115,6 @@ public class CuboidTest {
 		for(int i = 0; i < cub.size(); i++) {
 			System.out.println(cub.get(i).volume());
 		}
-	}	
-	
-//	@Test
-//	public void compareTotest1() throws Exception {
-//		ArrayList<Cuboid> cub = new ArrayList<Cuboid>();
-//		cub.add(new Cuboid(3,4,6));
-//		cub.add(new Cuboid(2,2,1));
-//		Collections.sort(cub);
-//	}
-
+	}
 
 }
